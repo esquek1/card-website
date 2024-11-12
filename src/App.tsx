@@ -6,76 +6,42 @@ import card_leandro from "./assets/card_leandro.png";
 import card_julienne from "./assets/card_julienne.png";
 import card_hya from "./assets/card_hya.png";
 import card_kelly from "./assets/card_kelly.png";
+import backgroundImg from "./assets/background.jpg";
 
 function App() {
     return (
         <div className="banner">
             <div
                 className="slider"
-                style={
-                    {
-                        "--quantity": 6,
-                    } as React.CSSProperties
-                }
-            >
+                style={{ "--quantity": 6 } as React.CSSProperties}>
                 <div
                     className="card-item"
-                    style={
-                        {
-                            "--position": 1,
-                        } as React.CSSProperties
-                    }
-                >
+                    style={{ "--position": 1 } as React.CSSProperties}>
                     <img src={card_reena} alt="" />
                 </div>
                 <div
                     className="card-item"
-                    style={
-                        {
-                            "--position": 2,
-                        } as React.CSSProperties
-                    }
-                >
+                    style={{ "--position": 2 } as React.CSSProperties}>
                     <img src={card_rizzy} alt="" />
                 </div>
                 <div
                     className="card-item"
-                    style={
-                        {
-                            "--position": 3,
-                        } as React.CSSProperties
-                    }
-                >
+                    style={{ "--position": 3 } as React.CSSProperties}>
                     <img src={card_leandro} alt="" />
                 </div>
                 <div
                     className="card-item"
-                    style={
-                        {
-                            "--position": 4,
-                        } as React.CSSProperties
-                    }
-                >
+                    style={{ "--position": 4 } as React.CSSProperties}>
                     <img src={card_julienne} alt="" />
                 </div>
                 <div
                     className="card-item"
-                    style={
-                        {
-                            "--position": 5,
-                        } as React.CSSProperties
-                    }
-                >
+                    style={{ "--position": 5 } as React.CSSProperties}>
                     <img src={card_hya} alt="" />
                 </div>
                 <div
                     className="card-item"
-                    style={
-                        {
-                            "--position": 6,
-                        } as React.CSSProperties
-                    }
-                >
+                    style={{ "--position": 6 } as React.CSSProperties}>
                     <img src={card_kelly} alt="" />
                 </div>
             </div>
@@ -88,7 +54,9 @@ function App() {
                         <b>Web Design</b>
                     </p>
                 </div>
-                <div className="model"></div>
+            </div>
+            <div className="model">
+                <img src={backgroundImg} />
             </div>
         </div>
     );
