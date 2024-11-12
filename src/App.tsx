@@ -10,25 +10,85 @@ import card_kelly from "./assets/card_kelly.png";
 function App() {
     return (
         <div className="banner">
-            <div className="slider">
-                <div className="card-item">
+            <div
+                className="slider"
+                style={
+                    {
+                        "--quantity": 6,
+                    } as React.CSSProperties
+                }
+            >
+                <div
+                    className="card-item"
+                    style={
+                        {
+                            "--position": 1,
+                        } as React.CSSProperties
+                    }
+                >
                     <img src={card_reena} alt="" />
                 </div>
-                <div className="card-item">
+                <div
+                    className="card-item"
+                    style={
+                        {
+                            "--position": 2,
+                        } as React.CSSProperties
+                    }
+                >
                     <img src={card_rizzy} alt="" />
                 </div>
-                <div className="card-item">
+                <div
+                    className="card-item"
+                    style={
+                        {
+                            "--position": 3,
+                        } as React.CSSProperties
+                    }
+                >
                     <img src={card_leandro} alt="" />
                 </div>
-                <div className="card-item">
+                <div
+                    className="card-item"
+                    style={
+                        {
+                            "--position": 4,
+                        } as React.CSSProperties
+                    }
+                >
                     <img src={card_julienne} alt="" />
                 </div>
-                <div className="card-item">
+                <div
+                    className="card-item"
+                    style={
+                        {
+                            "--position": 5,
+                        } as React.CSSProperties
+                    }
+                >
                     <img src={card_hya} alt="" />
                 </div>
-                <div className="card-item">
+                <div
+                    className="card-item"
+                    style={
+                        {
+                            "--position": 6,
+                        } as React.CSSProperties
+                    }
+                >
                     <img src={card_kelly} alt="" />
                 </div>
+            </div>
+
+            <div className="content">
+                <h1>CARD DESIGN</h1>
+                <div className="designer">
+                    <h2>R. CASTILLO</h2>
+                    <p>
+                        <b>Web Design</b>
+                    </p>
+                </div>
+                <div className="model"></div>
             </div>
         </div>
     );
