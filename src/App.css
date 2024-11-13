@@ -11,41 +11,17 @@
 
 .banner .slider {
     position: absolute;
-    width: 200px;
-    height: 250px;
-    top: 25%;
-    left: calc(50% - 100px);
-    transform-style: preserve-3d;
-    transform: perspective(1000px);
-    animation: rotating 15s linear infinite, spiral 15s linear infinite;
+    left: 25%;
+    right: 25%;
+    bottom: 10%;
     z-index: 1;
-
     border: 1px solid blue;
-}
-
-@keyframes rotating {
-    from {
-        transform: perspective(1000px) rotateX(0deg);
-    }
-    to {
-        transform: perspective(1000px) rotateX(360deg);
-    }
-}
-
-@keyframes spiral {
-    transform: translate3d();
+    display: inline-flex;
 }
 
 .banner .slider .card-item {
     border: 1px solid white;
-    position: absolute;
-    inset: 0 0 0 0;
-
-    transform: rotateX(
-            calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
-        )
-        translate3d(550px, 550px, 0);
-    /*translate3d(tx, ty, tz)*/
+    position: cover;
 }
 
 .banner .slider .card-item img {
@@ -56,7 +32,7 @@
 
 .content {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: min(1400px, 100vw);

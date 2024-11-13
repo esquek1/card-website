@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import card_reena from "./assets/card_reena.png";
 import card_rizzy from "./assets/card_rizzy.png";
@@ -9,41 +9,43 @@ import card_kelly from "./assets/card_kelly.png";
 import backgroundImg from "./assets/background.jpg";
 
 function App() {
+    const [activeCard, setActiveCard] = useState<number | null>(null);
+    // Function to handle the click and set the active card index
+    const handleClick = (index: number) => {
+        setActiveCard(index);
+    };
+    const cards = [
+        card_reena,
+        card_rizzy,
+        card_leandro,
+        card_julienne,
+        card_hya,
+        card_kelly,
+    ];
+
     return (
         <div className="banner">
             <div
                 className="slider"
-                style={{ "--quantity": 6 } as React.CSSProperties}>
-                <div
-                    className="card-item"
-                    style={{ "--position": 1 } as React.CSSProperties}>
-                    <img src={card_reena} alt="" />
-                </div>
-                <div
-                    className="card-item"
-                    style={{ "--position": 2 } as React.CSSProperties}>
-                    <img src={card_rizzy} alt="" />
-                </div>
-                <div
-                    className="card-item"
-                    style={{ "--position": 3 } as React.CSSProperties}>
-                    <img src={card_leandro} alt="" />
-                </div>
-                <div
-                    className="card-item"
-                    style={{ "--position": 4 } as React.CSSProperties}>
-                    <img src={card_julienne} alt="" />
-                </div>
-                <div
-                    className="card-item"
-                    style={{ "--position": 5 } as React.CSSProperties}>
-                    <img src={card_hya} alt="" />
-                </div>
-                <div
-                    className="card-item"
-                    style={{ "--position": 6 } as React.CSSProperties}>
-                    <img src={card_kelly} alt="" />
-                </div>
+                style={{ "--quantity": cards.length } as React.CSSProperties}>
+                {cards.map((card, index) => {
+                    const isActive = activeCard === index;
+                    return (
+                        <div
+                            key={index}
+                            className={`card-item ${
+                                isActive ? "slide-fwd active" : ""
+                            }`}
+                            style={
+                                {
+                                    "--position": index + 1,
+                                } as React.CSSProperties
+                            }
+                            onClick={() => handleClick(index)}>
+                            <img src={card} alt={`card-${index + 1}`} />
+                        </div>
+                    );
+                })}
             </div>
 
             <div className="content">
