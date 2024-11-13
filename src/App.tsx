@@ -67,55 +67,6 @@ function App() {
                     <img src={card_julienne} alt="" />
                 </div>
             </div>
-            {/* <div
-                className="slider"
-                style={{ "--quantity": 9 } as React.CSSProperties}>
-                <div
-                    className="card-item"
-                    style={{ "--position": -4 } as React.CSSProperties}>
-                    <img src={card_reena} alt="" />
-                </div>
-                <div
-                    className="card-item"
-                    style={{ "--position": -3 } as React.CSSProperties}>
-                    <img src={card_julienne} alt="" />
-                </div>
-                <div
-                    className="card-item"
-                    style={{ "--position": -2 } as React.CSSProperties}>
-                    <img src={card_rizzy} alt="" />
-                </div>
-                <div
-                    className="card-item"
-                    style={{ "--position": -1 } as React.CSSProperties}>
-                    <img src={card_leandro} alt="" />
-                </div>
-                <div
-                    className="card-item"
-                    style={{ "--position": 0 } as React.CSSProperties}>
-                    <img src={card_julienne} alt="" />
-                </div>
-                <div
-                    className="card-item"
-                    style={{ "--position": 1 } as React.CSSProperties}>
-                    <img src={card_hya} alt="" />
-                </div>
-                <div
-                    className="card-item"
-                    style={{ "--position": 2 } as React.CSSProperties}>
-                    <img src={card_kelly} alt="" />
-                </div>
-                <div
-                    className="card-item"
-                    style={{ "--position": 3 } as React.CSSProperties}>
-                    <img src={card_leandro} alt="" />
-                </div>
-                <div
-                    className="card-item"
-                    style={{ "--position": 4 } as React.CSSProperties}>
-                    <img src={card_rizzy} alt="" />
-                </div>
-            </div> */}
 
             <div className="content">
                 <h1>TRADING CARDS </h1>
