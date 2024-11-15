@@ -110,6 +110,8 @@ function App() {
                     </div>
                 </div>
 
+                <div className="artist-content"></div>
+
                 <div className="content">
                     <h1>TRADING CARDS </h1>
                     <div className="designer">
