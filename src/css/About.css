@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+
+.about-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 12px;
+    width: 100%;
+    height: 100%;
+    font-family: "Dela Gothic One", sans-serif;
+    text-transform: uppercase;
+    color: #0d52a1;
+    border: 1px solid red;
+}
+
+.about-images {
+    display: grid;
+    grid-template-rows: 60% 40%;
+
+    border: 1px solid purple;
+}
+
+.about-content p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.6; /* Increases line spacing for better readability */
+    margin-bottom: 15px; /* Adds space below the paragraph */
+    white-space: pre-line;
+    border: 1px solid yellow;
+}
+
+.img_polaroid1 img,
+.img_polaroid2 img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.img_polaroid1 img {
+    transform: translateY(-50px); /* Moves the image slightly above */
+}
+
+.img_polaroid2 img {
+    max-width: 250px;
+}
+
+p {
+    min-width: 200px;
+    max-width: 750px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    font-size: 1vw;
+    font-weight: 700;
+    font-style: normal;
+    overflow-wrap: break-word;
+    white-space: pre-line;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-images {
+        grid-template-rows: auto;
+    }
+
+    .img_polaroid1 img {
+        transform: translateY(0);
+    }
+
+    .img_polaroid2 img {
+        max-width: 200px;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+}
