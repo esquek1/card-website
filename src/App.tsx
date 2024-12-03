@@ -4,11 +4,13 @@ import "./App.css";
 import Header from "./components/Header.tsx";
 import AboutPage from "./pages/about.tsx";
 import Cards from "./pages/card.tsx";
+import Capstone from "./pages/capstone.tsx";
 function App() {
     return (
         <div className="app">
             <Header />
             <AboutPage />
+            <Capstone />
             <Cards />
         </div>
     );

@@ -2,7 +2,7 @@ import React from "react";
 import "../css/About.css";
 import img_polaroid1 from "../assets/polaroids.png";
 import img_polaroid2 from "../assets/polaroid_2.png";
-function about() {
+function About() {
     return (
         <div className="about-container">
             <div className="about-content">
@@ -16,7 +16,7 @@ function about() {
                 </div>
 
                 <p>
-                    I’m a queer Filipino native
+                    I’m a Filipino native
                     <br /> to Los Angeles, and
                     <br />
                     illustrations are my jam.
@@ -55,4 +55,4 @@ function about() {
     );
 }
 
-export default about;
+export default About;

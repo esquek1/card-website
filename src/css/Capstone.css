@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "DrukWideBold";
+    src: url("../assets/fonts/DrukWideBold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.capstone-text {
+    font-family: "DrukWideBold";
+    text-transform: uppercase;
+    color: #a10d0d;
+}
+.capstone-images {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 1px solid blue;
+}
+.capstone-background {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid yellow;
+    gap: 32px;
+    z-index: 0;
+}
+
+.capstone-background img {
+    width: 45vw;
+    height: auto;
+
+    object-fit: contain;
+}
+
+.capstone-foreground {
+    position: relative;
+
+    z-index: 1;
+}
+
+.capstone-foreground img {
+    position: absolute;
+    bottom: 0;
+    width: 10vw;
+    height: auto;
+
+    object-fit: contain;
+
+    top: 50%; /* Position vertically at the center */
+    left: 50%; /* Position horizontally at the center */
+    transform: translate(-50%, -50%) rotate(270deg); /* Adjust for exact centering */
+}
