@@ -78,7 +78,7 @@ p {
     text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .about-content {
         grid-template-columns: 1fr;
     }
