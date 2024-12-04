@@ -74,4 +74,5 @@
 }
 
 .capstone-foreground:hover .board {
+    transform: rotate(calc(var(--position: -1)));
 }
