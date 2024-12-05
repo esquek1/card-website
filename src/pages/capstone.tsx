@@ -32,16 +32,19 @@ function Capstone() {
                     <div className="capstone-foreground">
                         <div
                             className="board"
+                            id="board1"
                             style={{ "--position": -1 } as React.CSSProperties}>
                             <img src={capstone_boarding1} alt="" />
                         </div>
                         <div
                             className="board"
+                            id="board2"
                             style={{ "--position": -0 } as React.CSSProperties}>
                             <img src={capstone_boarding2} alt="" />
                         </div>
                         <div
                             className="board"
+                            id="board3"
                             style={{ "--position": 1 } as React.CSSProperties}>
                             <img src={capstone_boarding3} alt="" />
                         </div>
