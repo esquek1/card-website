@@ -42,7 +42,7 @@ function Capstone() {
                         </div>
                         <div
                             className="board"
-                            style={{ "--position": -1 } as React.CSSProperties}>
+                            style={{ "--position": 1 } as React.CSSProperties}>
                             <img src={capstone_boarding3} alt="" />
                         </div>
                     </div>
