@@ -1,15 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
 
 .about-container {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     height: 100vh;
+}
+
+.about-background,
+.about-foreground {
+    position: absolute;
+}
+
+.about-background {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100vh;
+
     padding: 20px;
+
+    z-index: 0;
     box-sizing: border-box;
+    border: 1px solid blue;
 }
 
+.about-foreground {
+    z-index: 1;
+    border: 1px solid red;
+}
 .about-content {
     display: grid;
     grid-template-columns: 60% 40%;
@@ -41,7 +63,7 @@
 
 .img_polaroid1,
 .img_polaroid2,
-.img_howdy,
+.about-foreground,
 .img_garfield {
     display: flex;
     align-self: flex-end;
@@ -49,7 +71,6 @@
 
 .img_polaroid1 img,
 .img_polaroid2 img,
-.img_howdy img,
 .img_garfield img {
     width: 100%;
     height: auto;
@@ -64,10 +85,9 @@
     max-width: 150px;
 }
 
-.img_howdy img {
+.img_garfield img {
 }
 
-.img_howdy img,
 .img_garfield img {
     z-index: 3;
 }

@@ -42,6 +42,11 @@ function Capstone() {
                     </div>
                 </div>
             </div>
+
+            <div className="container">
+                <div className="item-1">1</div>
+                <div className="item-2">2</div>
+            </div>
         </div>
     );
 }

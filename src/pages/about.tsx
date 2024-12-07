@@ -7,57 +7,61 @@ import img_garfield from "../assets/garf_sticker.png";
 function About() {
     return (
         <div className="about-container">
-            <div className="about-content">
-                <div className="about-images">
-                    <div className="img_polaroid1">
-                        <img src={img_polaroid1} alt="" />
+            <div className="about-background">
+                <div className="about-content">
+                    <div className="about-images">
+                        <div className="img_polaroid1">
+                            <img src={img_polaroid1} alt="" />
+                        </div>
+                        <div className="img_polaroid2">
+                            <img src={img_polaroid2} alt="" />
+                        </div>
+
+                        <div className="img_garfield">
+                            <img src={img_garfield} alt="" />
+                        </div>
                     </div>
-                    <div className="img_polaroid2">
-                        <img src={img_polaroid2} alt="" />
-                    </div>
-                    <div className="img_howdy">
-                        <img src={img_howdy} alt="" />
-                    </div>
-                    <div className="img_garfield">
-                        <img src={img_garfield} alt="" />
+                    <div className="about-text">
+                        <p>
+                            I’m a Filipino native
+                            <br /> to Los Angeles, and
+                            <br />
+                            illustrations are my jam.
+                            <br /> I’m always looking for
+                            <br />
+                            ways to infuse that
+                            <br />
+                            creative spark into my
+                            <br />
+                            work. When I’m not
+                            <br />
+                            designing, you’ll find me
+                            <br />
+                            hanging out with animals
+                            <br />
+                            (specifically my cats),
+                            <br />
+                            cooking up new recipes,
+                            <br />
+                            listening to new music,
+                            <br />
+                            sampling delicious foods,
+                            <br />
+                            getting competitive in
+                            <br />
+                            first-person shooter
+                            <br />
+                            games, or losing myself
+                            <br />
+                            in a good puzzle. Life’s too
+                            <br />
+                            short for boring hobbies!
+                        </p>
                     </div>
                 </div>
-
-                <p>
-                    I’m a Filipino native
-                    <br /> to Los Angeles, and
-                    <br />
-                    illustrations are my jam.
-                    <br /> I’m always looking for
-                    <br />
-                    ways to infuse that
-                    <br />
-                    creative spark into my
-                    <br />
-                    work. When I’m not
-                    <br />
-                    designing, you’ll find me
-                    <br />
-                    hanging out with animals
-                    <br />
-                    (specifically my cats),
-                    <br />
-                    cooking up new recipes,
-                    <br />
-                    listening to new music,
-                    <br />
-                    sampling delicious foods,
-                    <br />
-                    getting competitive in
-                    <br />
-                    first-person shooter
-                    <br />
-                    games, or losing myself
-                    <br />
-                    in a good puzzle. Life’s too
-                    <br />
-                    short for boring hobbies!
-                </p>
+            </div>
+            <div className="about-foreground">
+                <img src={img_howdy} alt="" />
             </div>
         </div>
     );
