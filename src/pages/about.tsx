@@ -2,6 +2,8 @@ import React from "react";
 import "../css/About.css";
 import img_polaroid1 from "../assets/polaroids.png";
 import img_polaroid2 from "../assets/polaroid_2.png";
+import img_howdy from "../assets/howdy.png";
+import img_garfield from "../assets/garf_sticker.png";
 function About() {
     return (
         <div className="about-container">
@@ -12,6 +14,12 @@ function About() {
                     </div>
                     <div className="img_polaroid2">
                         <img src={img_polaroid2} alt="" />
+                    </div>
+                    <div className="img_howdy">
+                        <img src={img_howdy} alt="" />
+                    </div>
+                    <div className="img_garfield">
+                        <img src={img_garfield} alt="" />
                     </div>
                 </div>
 

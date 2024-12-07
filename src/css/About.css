@@ -40,13 +40,17 @@
 }
 
 .img_polaroid1,
-.img_polaroid2 {
+.img_polaroid2,
+.img_howdy,
+.img_garfield {
     display: flex;
     align-self: flex-end;
 }
 
 .img_polaroid1 img,
-.img_polaroid2 img {
+.img_polaroid2 img,
+.img_howdy img,
+.img_garfield img {
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -58,6 +62,14 @@
 
 .img_polaroid2 img {
     max-width: 150px;
+}
+
+.img_howdy img {
+}
+
+.img_howdy img,
+.img_garfield img {
+    z-index: 3;
 }
 
 p {
