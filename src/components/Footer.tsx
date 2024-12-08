@@ -4,23 +4,14 @@ import QR from "../assets/QR.png";
 import "../css/Footer.css";
 function Footer() {
     return (
-        <div className="container">
-            <div className="item-1">1</div>
-            <div className="item-2">2</div>
+        <div className="footer-container">
+            <div className="footer-background">
+                <img src={QR_background} alt="QR background" />
+            </div>
+            <div className="qr">
+                <img src={QR} alt="QR" />
+            </div>
         </div>
-        // <div className="footer-container">
-        //     <div className="footer-background">
-        //         <img src={QR_background} alt="QR background" />
-        //     </div>
-        //     <div className="qr">
-        //         <img src={QR} alt="QR" />
-        //     </div>
-
-        //     <div className="container">
-        //         <div className="item-1">1</div>
-        //         <div className="item-2">2</div>
-        //     </div>
-        // </div>
     );
 }
 

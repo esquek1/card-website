@@ -4,36 +4,48 @@ import img_polaroid1 from "../assets/polaroids.png";
 import img_polaroid2 from "../assets/polaroid_2.png";
 import img_howdy from "../assets/howdy.png";
 import img_garfield from "../assets/garf_sticker.png";
+
 function About() {
     return (
         <div className="about-container">
+            <div className="about-foreground">
+                <img src={img_howdy} alt="" />
+            </div>
             <div className="about-background">
                 <div className="about-content">
-                    <div className="about-images">
+                    <div className="about-left-side">
                         <div className="img_polaroid1">
                             <img src={img_polaroid1} alt="" />
                         </div>
-                        <div className="img_polaroid2">
-                            <img src={img_polaroid2} alt="" />
-                        </div>
-
-                        <div className="img_garfield">
-                            <img src={img_garfield} alt="" />
+                        <div className="about-bottom">
+                            <div className="about-top-half">
+                                <div className="about-resume">
+                                    <h1>RESUME</h1>
+                                </div>
+                                <div className="img_polaroid2">
+                                    <img src={img_polaroid2} alt="" />
+                                </div>
+                            </div>
+                            <div className="about-bottom-half">
+                                <div className="img_garfield">
+                                    <img src={img_garfield} alt="" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="about-text">
                         <p>
-                            I’m a Filipino native
-                            <br /> to Los Angeles, and
+                            I’m a Filipino native to Los
                             <br />
-                            illustrations are my jam.
-                            <br /> I’m always looking for
+                            Angeles, and illustrations
                             <br />
-                            ways to infuse that
+                            are my jam. I’m always
                             <br />
-                            creative spark into my
+                            looking for ways to infuse
                             <br />
-                            work. When I’m not
+                            that creative spark into
+                            <br />
+                            my work. When I’m not
                             <br />
                             designing, you’ll find me
                             <br />
@@ -59,9 +71,6 @@ function About() {
                         </p>
                     </div>
                 </div>
-            </div>
-            <div className="about-foreground">
-                <img src={img_howdy} alt="" />
             </div>
         </div>
     );
