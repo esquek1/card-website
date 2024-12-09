@@ -23,7 +23,20 @@ function App() {
     return (
         <div className="app">
             <div className="app-stickers">
-                <img id="pink_arrow" src={sticker_arrow} alt="Pink arrow" />
+                <img
+                    id="pink_arrow"
+                    src={sticker_arrow}
+                    alt="Pink arrow sticker"
+                />
+                <img id="sinta" src={sticker_sinta} alt="SINTA sticker" />
+                <img id="fish" src={sticker_fish} alt="Fish sticker" />
+                <img id="avocado" src={sticker_avocado} alt="Avocado sticker" />
+                <img id="bread" src={sticker_bread} alt="Bread sticker" />
+                <img id="onion" src={sticker_onion} alt="Onion sticker" />
+                <img id="cheese" src={sticker_cheese} alt="Cheese sticker" />
+                <img id="tomato" src={sticker_tomato} alt="Tomato sticker" />
+                <img id="mayo" src={sticker_mayo} alt="Mayo sticker" />
+                <img id="mustard" src={sticker_mustard} alt="Mustard sticker" />
             </div>
             <div className="app-pages">
                 <Header />
