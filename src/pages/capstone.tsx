@@ -47,40 +47,6 @@ function Capstone() {
                     />
                 </div>
             </div>
-
-            {/* <div className="capstone-content">
-                <div className="capstone-text">
-                    <div className="capstone-title">
-                        <h1>IYO</h1>
-                    </div>
-                    <div className="capstone-description">
-                        <p>
-                            filipino-american inspired custom skateboards,
-                            <br />
-                            zine and stickers! something worth celebrating
-                            <br />
-                            and riding along on
-                        </p>
-                    </div>
-                </div>
-                <div className="capstone-images">
-                    <div className="capstone-background">
-                        <img src={capstone_bg_img1} alt="" />
-                        <img src={capstone_bg_img2} alt="" />
-                    </div>
-                    <div className="capstone-foreground">
-                        <div className="board" id="board1">
-                            <img src={capstone_boarding1} alt="" />
-                        </div>
-                        <div className="board" id="board2">
-                            <img src={capstone_boarding2} alt="" />
-                        </div>
-                        <div className="board" id="board3">
-                            <img src={capstone_boarding3} alt="" />
-                        </div>
-                    </div>
-                </div>
-            </div> */}
         </div>
     );
 }
