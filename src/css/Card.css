@@ -1,43 +1,78 @@
 @import url("https://fonts.cdnfonts.com/css/ica-rubrik-black");
 @import url("https://fonts.cdnfonts.com/css/poppins");
-
+@font-face {
+    font-family: "DrukWideBold";
+    src: url("../assets/fonts/DrukWideBold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
 .card-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
     position: relative;
     width: 100%;
     height: 100vh;
+    padding: 20px;
     overflow: hidden;
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+.card-text {
+    margin-top: 20%;
+    border: 1px solid yellow;
+}
+
+.card-title {
+    border: 1px solid blue;
+}
+
+.card-title img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card-subheading {
+    font-size: clamp(16px, calc(100vw / 12.5), 24px);
+    font-family: "DrukWideBold";
+    color: #a10d0d;
+    text-transform: uppercase;
+}
+
+.card-description {
+    font-size: clamp(12px, calc(100vw / 12.5), 16px);
+    font-family: "DrukWideBold";
+    color: #a10d0d;
+    text-transform: uppercase;
 }
 
 .card-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .card-content .card {
-    position: absolute;
-    width: 180px;
-    height: 250px;
-    background: #0ff;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
+    position: absolute;
+    left: 33%;
+    width: 180px;
+    height: 250px;
+
     color: rgba(0, 0, 0, 0.2);
-    font-size: 8rem;
-    font-weight: 800;
+    /* box-shadow: 0 0 5x #0fff; */
+    border-radius: 5px;
     border: 10px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
     transition: 0.5s;
     transform-origin: 50% 100%;
     /* filter: hue-rotate(calc(50deg * var(--position))); */
-    box-shadow: 0 0 5x #0fff;
-    cursor: pointer;
-    left: 25%;
-
     z-index: 2;
 }
 
@@ -73,31 +108,11 @@
 .card-content .card:active {
     translate: calc(var(--position) * 25px);
     z-index: 100;
-    background: #0ff;
+    /* background: #0ff; */
 }
 
 .card-content .card img {
     width: 180%;
-    height: 250%;
+    height: 180%;
     object-fit: cover;
-}
-
-.title-content {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(1400px, 100vw);
-    height: max-content;
-    padding-bottom: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.title-content h1 {
-    font-family: "ICA Rubrik";
-    font-size: 12em;
-    line-height: 1em;
-    color: #0b1623;
 }

@@ -6,7 +6,7 @@ import card_leandro from "../assets/card_leandro.png";
 import card_julienne from "../assets/card_julienne.png";
 import card_hya from "../assets/card_hya.png";
 import card_kelly from "../assets/card_kelly.png";
-
+import card_title from "../assets/trading_cards.png";
 import "../css/Card.css";
 
 function Cards() {
@@ -49,8 +49,18 @@ function Cards() {
                     <img src={card_reena} alt="" />
                 </div>
             </div>
-            <div className="title-content">
-                <h1>ILLUSTRATIVE TRADING CARDS!</h1>
+            <div className="card-text">
+                <div className="card-title">
+                    <img src={card_title} alt="Illustrative Trading Cards" />
+                </div>
+                <h2 className="card-subheading">
+                    Aren't my friends
+                    <br /> and i so cute?!
+                </h2>
+                <p className="card-description">
+                    Each card represents each person's personality
+                    <br /> and interests, best encapsulating who they are
+                </p>
             </div>
         </div>
     );

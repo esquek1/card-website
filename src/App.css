@@ -1,0 +1,21 @@
+.app {
+    position: relative; /* Ensure the child elements are positioned relative to this */
+}
+
+.app-stickers {
+    position: fixed; /* Ensures the stickers stay in one place, even during scrolling */
+    top: 20px; /* Adjust the position as needed */
+    left: 20px; /* Adjust the position as needed */
+    z-index: 9999; /* High z-index ensures it's in the foreground */
+    pointer-events: none; /* Optional: Allows interaction with elements below */
+}
+
+.app-stickers img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+}
+
+.app-pages {
+    position: relative; /* Ensure the pages stack below the stickers */
+    z-index: 1; /* Lower z-index than .app-stickers */
+}

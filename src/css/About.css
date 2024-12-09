@@ -11,7 +11,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     position: relative;
+    width: 100%;
     height: 100vh;
     border: 1px solid white;
     overflow: hidden;
@@ -30,9 +32,8 @@
     height: 100vh;
 
     padding: 20px;
-
-    z-index: 0;
     box-sizing: border-box;
+    z-index: 0;
 }
 /*Position Howdy image (foreground) on top of the 
 middle of polaroid_1 and text (background)*/
@@ -54,6 +55,7 @@ middle of polaroid_1 and text (background)*/
 .about-content {
     display: grid;
     grid-template-columns: 60% 40%;
+
     width: 100%;
     height: 100%;
 }
@@ -65,7 +67,7 @@ middle of polaroid_1 and text (background)*/
 }
 
 .about-bottom {
-    transform: translateY(-25%);
+    transform: translateY(-20%);
     border: 1px inset yellow;
 }
 
@@ -78,11 +80,11 @@ middle of polaroid_1 and text (background)*/
 }
 
 .img_polaroid2 {
-    margin-right: 0;
+    margin-right: 32px;
 }
 
 .img_polaroid2 img {
-    width: 15vw;
+    width: 12vw;
     object-fit: contain;
 }
 
@@ -94,7 +96,7 @@ middle of polaroid_1 and text (background)*/
 /*When hovered over resume, it should fill in*/
 .about-resume {
     margin-left: 20%;
-
+    cursor: pointer;
     display: flex;
     justify-content: center; /* Centers the content horizontally */
     align-items: center; /* Centers the content vertically */
@@ -141,14 +143,13 @@ middle of polaroid_1 and text (background)*/
     color: #0d52a1;
     min-width: 200px;
     max-width: 750px;
-
     letter-spacing: 2px;
     font-size: 16px;
     font-weight: 700;
     text-align: left;
     overflow-wrap: break-word;
     white-space: pre-line;
-
+    font-size: clamp(16px, calc(100vw / 12.5), 24px);
     border: 1px solid orange;
 }
 
