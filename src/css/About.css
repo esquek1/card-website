@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    box-sizing: border-box;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -30,11 +30,11 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-
     padding: 20px;
     box-sizing: border-box;
     z-index: 0;
 }
+
 /*Position Howdy image (foreground) on top of the 
 middle of polaroid_1 and text (background)*/
 .about-foreground {
@@ -65,57 +65,63 @@ middle of polaroid_1 and text (background)*/
     border: 1px inset yellow;
 }
 
-.about-top-half {
-    display: flex;
-    flex-direction: row;
-    border: 1px solid blue;
-    justify-content: space-between;
-    width: 100%;
-    position: absolute;
-    bottom: 15%;
-    left: 0;
-
-    border: 1px solid red;
-}
-
 .about-left-side {
     display: grid;
-    grid-template-rows: 60% 40%;
-    /* display: flex;
-    flex-direction: column; */
+    grid-template-rows: 67% 33%;
     position: relative;
-    border: 1px solid purple;
+    overflow: hidden; /* Prevent the image from spilling out */
+}
+
+.about-polaroids {
+    position: relative;
+    width: 100%; /* Inherit the full width of the grid column */
+    height: 100%; /* Let the height adjust based on the image */
+    box-sizing: border-box;
 }
 
 .about-polaroids img {
-    position: relative;
+    width: 100%; /* Constrain the image to the container's width */
+    max-width: 100%; /* Prevent horizontal overflow */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits within the parent */
+    display: block; /* Avoid extra space caused by inline images */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+}
+
+.about-top-half {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
-    border: 1px solid blue;
+    position: absolute;
+    bottom: -25%;
+    left: 0;
 }
 
 .img_garfield {
-    max-height: 100%;
+    position: relative;
+    width: 100%; /* Inherit the full width of the grid column */
+    height: 100%; /* Let the height adjust based on the image */
+    overflow: hidden; /* Prevent the image from spilling out */
     box-sizing: border-box;
-    border: 1px solid red;
-    margin: 12px;
+    pointer-events: none;
 }
 
 .img_garfield img {
-    width: 20%;
-    max-height: 100%;
-    display: block;
+    display: block; /* Avoid extra space caused by inline images */
+    width: 25%; /* Constrain the image to the container's width */
+    object-fit: contain; /* Ensure the image fits within the parent */
     z-index: 3;
-    pointer-events: none;
-    border: 1px solid yellow;
     object-fit: contain;
 }
 
 .img_polaroid2 {
-    width: 25%;
+    margin-right: 3%;
+    width: 18%;
 }
 
 .img_polaroid2 img {
-    width: 1vw;
     object-fit: contain;
 }
 

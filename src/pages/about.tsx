@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/bout.css";
+import "../css/About.css";
 import img_polaroid1 from "../assets/polaroids.png";
 import img_polaroid2 from "../assets/polaroid_2.png";
 import img_howdy from "../assets/howdy.png";
