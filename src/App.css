@@ -19,3 +19,15 @@
     position: relative; /* Ensure the pages stack below the stickers */
     z-index: 1; /* Lower z-index than .app-stickers */
 }
+
+#pink_arrow {
+    transform: rotate(-60deg);
+}
+
+#sinta {
+    transform: rotate(-20deg);
+}
+
+#mustard {
+    transform: rotate(-20deg);
+}

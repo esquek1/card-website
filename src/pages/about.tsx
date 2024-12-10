@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/About.css";
+import "../css/bout.css";
 import img_polaroid1 from "../assets/polaroids.png";
 import img_polaroid2 from "../assets/polaroid_2.png";
 import img_howdy from "../assets/howdy.png";
@@ -14,10 +14,8 @@ function About() {
             <div className="about-background">
                 <div className="about-content">
                     <div className="about-left-side">
-                        <div className="img_polaroid1">
+                        <div className="about-polaroids">
                             <img src={img_polaroid1} alt="" />
-                        </div>
-                        <div className="about-bottom">
                             <div className="about-top-half">
                                 <div className="about-resume">
                                     <h1>RESUME</h1>
@@ -26,11 +24,9 @@ function About() {
                                     <img src={img_polaroid2} alt="" />
                                 </div>
                             </div>
-                            <div className="about-bottom-half">
-                                <div className="img_garfield">
-                                    <img src={img_garfield} alt="" />
-                                </div>
-                            </div>
+                        </div>
+                        <div className="img_garfield">
+                            <img src={img_garfield} alt="" />
                         </div>
                     </div>
                     <div className="about-text">
