@@ -168,6 +168,23 @@ middle of polaroid_1 and text (background)*/
     border: 1px solid orange;
 }
 
+@media (max-width: 1440px) {
+    .about-text {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1024px) {
+    .about-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 960px) {
+    .about-text {
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .about-container {
         height: auto;
