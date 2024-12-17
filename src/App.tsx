@@ -6,7 +6,7 @@ import AboutPage from "./pages/about.tsx";
 import Cards from "./pages/card.tsx";
 import Capstone from "./pages/capstone.tsx";
 import Footer from "./components/Footer.tsx";
-
+import ImageSlider from "./components/ImageSlider.tsx";
 // Stickers
 import sticker_arrow from "./assets/arrow.png";
 import sticker_sinta from "./assets/sinta.png";
@@ -18,6 +18,12 @@ import sticker_mayo from "./assets/sticker_mayo.png";
 import sticker_mustard from "./assets/sticker_mustard.png";
 import sticker_onion from "./assets/sticker_onion.png";
 import sticker_tomato from "./assets/sticker_tomato.png";
+
+import Poster1 from "./assets/posters_1.jpg";
+import Poster2 from "./assets/posters_2.jpg";
+import Poster3 from "./assets/posters_3.jpg";
+
+const POSTERIMAGES = [Poster1, Poster2, Poster3];
 
 function App() {
     return (
@@ -39,6 +45,7 @@ function App() {
                 <AboutPage />
                 <Capstone />
                 <Cards />
+                <ImageSlider imageUrls={POSTERIMAGES} />
                 <Footer />
             </div>
         </div>
