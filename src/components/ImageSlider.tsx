@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import "../css/ImageSlider.css";
 
+type Poster = {
+    url: string; // The URL of the poster image
+    title: string; // The title of the poster
+};
+
 type ImageSliderProps = {
     posters: Poster[];
 };
@@ -38,7 +43,7 @@ function ImageSlider({ posters }: ImageSliderProps) {
                     <img
                         src={posters[imageIndex].url}
                         alt={posters[imageIndex].title}
-                        className="slider-images-container"
+                        className="slider-content-image"
                     />
                     <div className="slider-content-title">
                         {posters[imageIndex].title}

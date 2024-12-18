@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "DrukWideBold";
+    src: url("../assets/fonts/DrukWideBold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 .slider-container {
     display: flex;
     flex-direction: column; /* Stacks the title above the content */
@@ -10,11 +17,13 @@
 }
 
 .slider-title {
+    font-family: "DrukWideBold";
     font-size: 2rem;
-    color: #fff;
+    color: rgba(161, 13, 13);
     font-weight: bold;
     margin-bottom: 20px; /* Space between title and content */
     text-align: center;
+    text-transform: uppercase;
 }
 
 .slider-content {
@@ -47,6 +56,7 @@
     width: 100%;
     height: 100%;
     margin: 0;
+    transition: translate 300ms ease-in-out;
 }
 
 .slider-content-title {
@@ -62,7 +72,6 @@
 /* Button styles for previous and next */
 .slider-arrows {
     position: relative;
-
     cursor: pointer;
     transition: background-color 100ms ease-in-out;
     background-color: rgba(0, 0, 0, 0.3);
