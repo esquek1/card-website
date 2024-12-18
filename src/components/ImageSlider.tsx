@@ -2,43 +2,56 @@ import React, { useState } from "react";
 import "../css/ImageSlider.css";
 
 type ImageSliderProps = {
-    imageUrls: string[];
+    posters: Poster[];
 };
 
-function ImageSlider({ imageUrls }: ImageSliderProps) {
+function ImageSlider({ posters }: ImageSliderProps) {
     // Stores image index
     const [imageIndex, setImageIndex] = useState(0);
 
     function showPrevImage() {
         setImageIndex((index) => {
-            if (index === 0) return imageUrls.length - 1;
+            if (index === 0) return posters.length - 1;
             return index - 1;
         });
     }
 
     function showNextImage() {
         setImageIndex((index) => {
-            if (index === imageUrls.length - 1) return 0;
+            if (index === posters.length - 1) return 0;
             return index + 1;
         });
     }
     return (
         <div className="slider-container">
-            <div className="slider-content">
-                {imageUrls.map((url) => (
-                    <img
-                        key={url}
-                        src={imageUrls[imageIndex]}
-                        className="slider-content-image"
-                    />
-                ))}
+            <div className="slider-title">
+                Some artist graphics I've worked on
             </div>
-            <button onClick={showPrevImage} className="slider-arrows" id="prev">
-                {"<"}
-            </button>
-            <button onClick={showNextImage} className="slider-arrows" id="next">
-                {">"}
-            </button>
+            <div className="slider-content">
+                <button
+                    onClick={showPrevImage}
+                    className="slider-arrows "
+                    id="prev">
+                    {"<"}
+                </button>
+                <div className="slider-content-images ">
+                    <img
+                        src={posters[imageIndex].url}
+                        alt={posters[imageIndex].title}
+                        className="slider-images-container"
+                    />
+                    <div className="slider-content-title">
+                        {posters[imageIndex].title}
+                    </div>
+                </div>
+
+                <button
+                    onClick={showNextImage}
+                    className="slider-arrows"
+                    id="next">
+                    {">"}
+                </button>
+            </div>
         </div>
     );
 }

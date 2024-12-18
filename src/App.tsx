@@ -18,12 +18,31 @@ import sticker_mayo from "./assets/sticker_mayo.png";
 import sticker_mustard from "./assets/sticker_mustard.png";
 import sticker_onion from "./assets/sticker_onion.png";
 import sticker_tomato from "./assets/sticker_tomato.png";
-
+// Posters
 import Poster1 from "./assets/posters_1.jpg";
 import Poster2 from "./assets/posters_2.jpg";
 import Poster3 from "./assets/posters_3.jpg";
 
-const POSTERIMAGES = [Poster1, Poster2, Poster3];
+// Define the Poster type
+type Poster = {
+    url: string;
+    title: string;
+};
+
+const POSTERIMAGES: Poster[] = [
+    {
+        url: Poster1,
+        title: "Conceited, Lola Young Lyrical Poster, 2024 Part 1",
+    },
+    {
+        url: Poster2,
+        title: "Conceited, Lola Young Lyrical Poster, 2024 Part 2",
+    },
+    {
+        url: Poster3,
+        title: "Conceited, Lola Young Lyrical Poster, 2024 Part 3",
+    },
+];
 
 function App() {
     return (
@@ -45,7 +64,7 @@ function App() {
                 <AboutPage />
                 <Capstone />
                 <Cards />
-                <ImageSlider imageUrls={POSTERIMAGES} />
+                <ImageSlider posters={POSTERIMAGES} />
                 <Footer />
             </div>
         </div>

@@ -1,53 +1,86 @@
 .slider-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-
+    flex-direction: column; /* Stacks the title above the content */
+    align-items: center; /* Centers everything horizontally */
+    justify-content: center; /* Centers everything vertically */
     width: 100%;
     height: 100vh;
     position: relative;
-    overflow: hidden;
-    border: 1px solid blue;
+    border: 1px solid blue; /* Optional for debugging */
+}
+
+.slider-title {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px; /* Space between title and content */
+    text-align: center;
 }
 
 .slider-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: auto;
+    height: 75%;
+}
+
+.slider-images-container {
     width: 100%;
-    height: 100vh;
-    margin: 0 auto;
+    height: 100%;
 }
 
-.slider-content img {
-    object-fit: cover;
-    max-width: 100%; /* Ensures images don't overflow */
-    max-height: 100%; /* Ensures images stay within container height */
-    display: block; /* Avoid extra space from inline elements */
-    margin: 0 auto;
+.slider-content-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-.slider-arrows {
+.slider-content-images img {
     display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    padding: 1rem;
+    object-fit: contain; /* Ensures the whole image fits inside the box */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.slider-content-title {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #fff;
+    width: 100%;
+    padding: 0 10px;
+    white-space: normal;
+}
+
+/* Button styles for previous and next */
+.slider-arrows {
+    position: relative;
+
     cursor: pointer;
     transition: background-color 100ms ease-in-out;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    z-index: 1;
 }
 
+/* Button hover effect */
 .slider-arrows:hover {
-    color: none;
-    background-color: rgb(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5); /* Darker on hover */
 }
 
-.slider-arrows > * {
-    stroke: white;
-    fill: black;
-}
-
+/* Position left arrow */
 #prev {
-    left: 0;
 }
 
+/* Position right arrow */
 #next {
-    right: 0;
 }
